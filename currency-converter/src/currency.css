@@ -1,0 +1,27 @@
+.mainpoints{
+    background-color: #767B91;
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.inputarea{
+    min-width: 10vw;
+    min-height: 25vh;
+    padding: 70px;
+    margin-bottom: 70px;
+    background-color: #E1E5EE;
+    border: 1px solid #E1E5EE;
+    border-radius: 5px;
+    font-size: 15px;
+    
+}
+
+.selectarea{
+    min-width: 15vw;
+    padding: 15px;
+    background-color: #E1E5EE;
+    border-radius: 5px;
+    font-size: 15px;
+}

@@ -64,15 +64,16 @@ function App() {
 
   return (
     <div className="App">
-      <h1>CONVERT</h1>
-      <Currency
-      currencylist = {currencylist}
-      selectedcurrency = {fromcurrency}
-      changecurrency = {e=>setFromCurrency(e.target.value)} //function when currency changes
-      amount = {fromAmount}
-      changeamount = {handlefromAmountChange}
-      />
-      <h2>=</h2>
+      <h1 className='title'>CURRENCY CONVERTER</h1>
+      <div className="mainarea">
+        <Currency
+        currencylist = {currencylist}
+        selectedcurrency = {fromcurrency}
+        changecurrency = {e=>setFromCurrency(e.target.value)} //function when currency changes
+        amount = {fromAmount}
+        changeamount = {handlefromAmountChange}
+        />
+      <h2 className="equal">=</h2>
       <Currency 
       currencylist = {currencylist}
       selectedcurrency = {tocurrency} 
@@ -80,6 +81,7 @@ function App() {
       amount={toAmount}
       changeamount = {handletoAmountChange}
       />
+      </div>
     </div>
   );
 }
